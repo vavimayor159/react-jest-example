@@ -1,6 +1,8 @@
 import React from 'react';
 import { Box, Button, Heading, Grommet } from 'grommet';
 import { Notification } from 'grommet-icons';
+import PokedexTable from './components/PokedexTable/PokedexTable';
+import { pokemonList } from './data/pokemon';
 
 const theme = {
   global: {
@@ -39,7 +41,7 @@ function App() {
         </AppBar>
         <Box direction='row' flex overflow={{horizontal: 'hidden'}}>
           <Box flex align='center' justify='center'>
-            app body
+            <PokedexTable pokemonData={pokemonList}/>
           </Box>
           <Box
             width='medium'
