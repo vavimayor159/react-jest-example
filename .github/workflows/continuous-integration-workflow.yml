@@ -1,4 +1,4 @@
-nombre: Greet Everyone
+name: Greet Everyone
 # Este flujo de trabajo se desencadena en los envíos al repositorio.
 on: [push]
 
