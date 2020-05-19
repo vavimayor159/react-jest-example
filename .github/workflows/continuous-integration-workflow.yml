@@ -11,4 +11,6 @@ jobs:
     steps:
       - name: Checkout files
         uses: actions/checkout@v2
+      - name: Run test files
+        run: yarn test
       # Este paso usa hello-world-javascript-action de GitHub: https://github.com/actions/hello-world-javascript-action
